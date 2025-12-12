@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <style>
+
+    html, body { touch-action: manipulation; -ms-touch-action: manipulation; }
+  </style>
+  <title>Ellora Tours and Travels - Services</title>
+ 
+  <!-- Remix Icons -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    rel="stylesheet"
+  />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f8f9fa] text-[#333333] antialiased">
+
+   <!-- Navbar -->
+<header class="bg-[#1a2332] sticky top-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto flex items-center justify-between h-24 px-6">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 text-white font-semibold text-2xl tracking-wide" >
+      <i class="ri-roadster-line text-[40px] text-[#d4af37]"></i>
+      <span>
+        ELLORA <span class="text-[#d4af37]">TOURS</span>
+      </span>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="lg:hidden flex items-center justify-center w-10 h-10 text-white cursor-pointer">
+      <i class="ri-menu-line text-[24px]"></i>
+    </button>
+
+    <!-- Nav Menu -->
+    <nav id="navMenu" class="hidden lg:flex absolute lg:relative top-24 lg:top-0 left-0 right-0 lg:left-auto lg:right-auto bg-[#1a2332] lg:bg-transparent flex-col lg:flex-row w-full lg:w-auto">
+      <ul class="flex flex-col lg:flex-row gap-0 lg:gap-10 text-sm font-semibold uppercase tracking-wide">
+
+        <li class="border-b lg:border-b-0">
+          <a href="home.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+            Home
+          </a>
+        </li>
+
+        <li class="border-b lg:border-b-0">
+          <a href="services.html" class="block lg:inline text-[#d4af37] border-b-2 border-[#d4af37] pb-1 px-6 lg:px-0 py-4 lg:py-0">
+            Services
+          </a>
+        </li>
+
+        <li class="border-b lg:border-b-0">
+          <a href="photogallery.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+            Photo Gallery
+          </a>
+        </li>
+        
+        <li class="border-b lg:border-b-0">
+          <a href="about.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+            About Us
+          </a>
+        </li>
+
+        <li class="border-b lg:border-b-0">
+          <a href="contact.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+
+  // Close menu when a link is clicked
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.add('hidden');
+    });
+  });
+</script>
+
+
+  <!-- Services Hero -->
+  <section
+    class="bg-cover bg-center text-white text-center py-100px"
+    style="background-image: linear-gradient(rgba(26,35,50,0.8),rgba(26,35,50,0.8)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"
+  >
+    <div class="max-w-1400px mx-auto px-5">
+      <h1 class="font-serif text-[56px] mb-5 tracking-[1px]">
+        Our Premium Services
+      </h1>
+      <div class="w-20 h-1 bg-[#d4af37] mx-auto my-6"></div>
+      <p class="text-[20px] max-w-800px mx-auto leading-relaxed text-[#e0e0e0]">
+        Experience the majestic beauty of Maharashtra with our world-class travel services. <br />
+        Quality, comfort, and unforgettable memories guaranteed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Services Blocks -->
+  <section class="bg-white py-20">
+    <div class="max-w-1400px mx-auto px-5">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-5">
+        <!-- Card 1 -->
+        <div
+          class="text-center px-8 py-10 border border-[#eeeeee] rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:border-transparent"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#f4f6f8] flex items-center justify-center mx-auto mb-6 text-[32px] text-[#1a2332] transition-all duration-300 group"
+          >
+            <i class="ri-car-washing-fill"></i>
+          </div>
+          <h3 class="font-serif text-[24px] text-[#1a2332] mb-4">
+            Luxury Transport
+          </h3>
+          <p class="text-[#666666] leading-relaxed">
+            Travel in style with our fleet of premium sedans and SUVs. Professionally chauffeured for your safety and
+            comfort across all routes.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="text-center px-8 py-10 border border-[#eeeeee] rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:border-transparent"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#f4f6f8] flex items-center justify-center mx-auto mb-6 text-[32px] text-[#1a2332] transition-all duration-300"
+          >
+            <i class="ri-hotel-bed-fill"></i>
+          </div>
+          <h3 class="font-serif text-[24px] text-[#1a2332] mb-4">
+            Professional Drivers.
+          </h3>
+          <p class="text-[#666666] leading-relaxed">
+            Professional & well educated drivers with white formal dress code.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="text-center px-8 py-10 border border-[#eeeeee] rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:border-transparent"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#f4f6f8] flex items-center justify-center mx-auto mb-6 text-[32px] text-[#1a2332] transition-all duration-300"
+          >
+            <i class="ri-guide-fill"></i>
+          </div>
+          <h3 class="font-serif text-[24px] text-[#1a2332] mb-4">
+            Expert Guides
+          </h3>
+          <p class="text-[#666666] leading-relaxed">
+            Discover the history and secrets of Maharashtra with our government-certified, multilingual tour guides.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Packages -->
+  <section class="bg-[#f0f2f5] py-24">
+    <div class="max-w-1400px mx-auto px-5">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-[42px] text-[#1a2332] mb-3">
+          Exclusive Tour Packages
+        </h2>
+        <p class="text-[18px] text-[#666666]">
+          Curated itineraries designed for every type of traveler
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-8">
+
+        <!-- Package 1 -->
+        <article
+          class="bg-white rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1582457801684-6cb99b64834f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Heritage Tour"
+            class="w-full h-260px object-cover"
+          />
+          <div class="flex-1 flex flex-col px-8 py-7">
+            <div class="flex gap-2 mb-4">
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                Heritage
+              </span>
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                3 Days
+              </span>
+            </div>
+            <h3 class="font-serif text-[24px] text-[#1a2332] mb-3">
+              Ajanta &amp; Ellora Explorer
+            </h3>
+            <p class="text-[15px] text-[#666666] leading-relaxed mb-6 flex-1">
+              Dive deep into history with a guided tour of the UNESCO World Heritage sites. Includes cave entry passes,
+              guide, and luxury stay.
+            </p>
+            <div class="flex items-center justify-between pt-5 border-t border-[#eeeeee]">
+              <div class="text-[24px] text-[#1a2332] font-bold">
+                ₹14,999 <span class="text-[14px] text-[#666666] font-normal">/ person</span>
+              </div>
+              <a
+                href="#"
+                class="inline-block px-6 py-2 border-2 border-[#d4af37] text-[#d4af37] rounded-md text-[16px] font-medium transition-all duration-200 hover:bg-[#d4af37] hover:text-white"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 2 -->
+        <article
+          class="bg-white rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1505158498176-0150b9c76264?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Hill Station"
+            class="w-full h-260px object-cover"
+          />
+          <div class="flex-1 flex flex-col px-8 py-7">
+            <div class="flex gap-2 mb-4">
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                Nature
+              </span>
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                4 Days
+              </span>
+            </div>
+            <h3 class="font-serif text-[24px] text-[#1a2332] mb-3">
+              Mist of Mahabaleshwar
+            </h3>
+            <p class="text-[15px] text-[#666666] leading-relaxed mb-6 flex-1">
+              Escape to the cool hills. Visit strawberry farms, Arthur's Seat, and enjoy a serene boat ride at Venna
+              Lake.
+            </p>
+            <div class="flex items-center justify-between pt-5 border-t border-[#eeeeee]">
+              <div class="text-[24px] text-[#1a2332] font-bold">
+                ₹18,500 <span class="text-[14px] text-[#666666] font-normal">/ person</span>
+              </div>
+              <a
+                href="#"
+                class="inline-block px-6 py-2 border-2 border-[#d4af37] text-[#d4af37] rounded-md text-[16px] font-medium transition-all duration-200 hover:bg-[#d4af37] hover:text-white"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 3 -->
+        <article
+          class="bg-white rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Beach Holiday"
+            class="w-full h-260px object-cover"
+          />
+          <div class="flex-1 flex flex-col px-8 py-7">
+            <div class="flex gap-2 mb-4">
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                Relaxation
+              </span>
+              <span
+                class="bg-[#f0f7ff] text-[#1a2332] text-[12px] font-bold uppercase tracking-[0.12em] px-3 py-1 rounded-full"
+              >
+                2 Days
+              </span>
+            </div>
+            <h3 class="font-serif text-[24px] text-[#1a2332] mb-3">
+              Alibaug Coastal Retreat
+            </h3>
+            <p class="text-[15px] text-[#666666] leading-relaxed mb-6 flex-1">
+              Sun, sand, and sea. A perfect weekend getaway with ferry rides, water sports, and authentic Konkani
+              seafood.
+            </p>
+            <div class="flex items-center justify-between pt-5 border-t border-[#eeeeee]">
+              <div class="text-[24px] text-[#1a2332] font-bold">
+                ₹9,999 <span class="text-[14px] text-[#666666] font-normal">/ person</span>
+              </div>
+              <a
+                href="#"
+                class="inline-block px-6 py-2 border-2 border-[#d4af37] text-[#d4af37] rounded-md text-[16px] font-medium transition-all duration-200 hover:bg-[#d4af37] hover:text-white"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Locations -->
+  <section class="bg-white py-24">
+    <div class="max-w-1400px mx-auto px-5">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-[42px] text-[#1a2332] mb-3">
+          Popular Destinations
+        </h2>
+        <p class="text-[18px] text-[#666666]">
+          Explore the gems of Maharashtra with us
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-3 grid-rows-2 gap-6"
+        style="grid-auto-rows: 300px;"
+      >
+        <!-- Ellora -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/ellora.jpg"
+            alt="Ellora Caves"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Ellora Caves
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                One of the largest rock-cut monastery-temple cave complexes in the world, featuring Buddhist, Hindu and
+                Jain monuments.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ajanta -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/ajanta.jpg"
+            alt="Ajanta Caves"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Ajanta Caves
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                Ancient Buddhist cave monuments dating from the 2nd century BCE, famous for their masterpieces of
+                Buddhist religious art.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mahabaleshwar -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/mahabaleshwar.jpg"
+            alt="Mahabaleshwar"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Mahabaleshwar
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                A vast plateau bound by valleys on all sides, known for its captivating strawberries, rivers, and
+                magnificent peaks.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lonavala -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/lonavala.jpg"
+            alt="Lonavala"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Lonavala
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                A hill station surrounded by green valleys, famous for the Karla Caves and the Bhushi Dam.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panchgani -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/pachgani.jpg"
+            alt="Panchgani"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Panchgani
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                Renowned for its tableland, a huge volcanic plateau, offering spectacular views of the coastal plains.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Alibaug -->
+        <article
+          class="relative rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.1)] group"
+        >
+          <img
+            src="image/service/alibaug.jpg"
+            alt="Alibaug"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-[rgba(26,35,50,0.9)] via-[rgba(26,35,50,0.3)] to-[rgba(26,35,50,0)] flex flex-col justify-end p-8 transition-all duration-300 group-hover:bg-[rgba(26,35,50,0.85)] group-hover:justify-center group-hover:items-center group-hover:text-center"
+          >
+            <div class="transform translate-y-5 transition-transform duration-400 group-hover:translate-y-0">
+              <h3
+                class="font-serif text-[26px] text-white mb-1 transition-colors duration-300 group-hover:text-[#d4af37] group-hover:mb-3"
+              >
+                Alibaug
+              </h3>
+              <p
+                class="text-[15px] text-[#dddddd] leading-relaxed opacity-0 h-0 overflow-hidden transition-all duration-400 group-hover:opacity-100 group-hover:h-auto group-hover:mt-2"
+              >
+                A coastal town known for its beaches and the historic Kolaba Fort.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1a2332] text-white py-10">
+    <div class="max-w-1400px mx-auto px-5">
+      <div class="grid grid-cols-1 lg:grid-cols-[2fr,1fr,1fr,1.5fr] gap-60px mb-60px">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 text-[28px] font-serif text-[#d4af37] mb-5">
+            <i class="ri-compass-3-fill text-[32px]"></i>
+            <span>ELLORA TOURS</span>
+          </div>
+          <p class="text-[15px] text-[#aab0b9] leading-relaxed mb-6">
+            We are dedicated to providing the best travel experience in Maharashtra. From heritage sites to hill
+            stations, we make your journey unforgettable.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-[#3a4454] flex items-center justify-center text-white transition-all duration-300 hover:bg-[#d4af37] hover:border-[#d4af37] hover:-translate-y-3px"
+            >
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-[#3a4454] flex items-center justify-center text-white transition-all duration-300 hover:bg-[#d4af37] hover:border-[#d4af37] hover:-translate-y-3px"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-[#3a4454] flex items-center justify-center text-white transition-all duration-300 hover:bg-[#d4af37] hover:border-[#d4af37] hover:-translate-y-3px"
+            >
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-[#3a4454] flex items-center justify-center text-white transition-all duration-300 hover:bg-[#d4af37] hover:border-[#d4af37] hover:-translate-y-3px"
+            >
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-[20px] text-[#d4af37] mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-2px after:bg-[#d4af37]">
+            Quick Links
+          </h4>
+          <ul class="space-y-3 text-[15px]">
+            <li>
+              <a href="home.html" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Services
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Tour Packages
+              </a>
+            </li>
+            <li>
+              <a href="photogallery.html" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Gallery
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="text-[20px] text-[#d4af37] mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-2px after:bg-[#d4af37]">
+            Support
+          </h4>
+          <ul class="space-y-3 text-[15px]">
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Terms &amp; Conditions
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> Careers
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 text-[#aab0b9] hover:text-[#d4af37] hover:pl-1 transition-all">
+                <i class="ri-arrow-right-s-line text-[14px]"></i> FAQs
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Get In Touch -->
+        <div>
+          <h4 class="text-[20px] text-[#d4af37] mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-2px after:bg-[#d4af37]">
+            Get In Touch
+          </h4>
+          <div class="space-y-4 text-[15px] text-[#aab0b9]">
+            <div class="flex items-start gap-3">
+              <i class="ri-map-pin-fill text-[20px] text-[#d4af37] mt-2px"></i>
+              <span>1234 Ellora Circle, Pune, Maharashtra 411001</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="ri-phone-fill text-[20px] text-[#d4af37] mt-2px"></i>
+              <span>+91 98765 43210</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="ri-mail-fill text-[20px] text-[#d4af37] mt-2px"></i>
+              <span>info@elloratours.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-[#2c3544] pt-6 flex items-center justify-between text-[14px] text-[#6c757d]">
+        <p>&copy; 2023 Ellora Tours and Travels. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-[#d4af37] transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-[#d4af37] transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
