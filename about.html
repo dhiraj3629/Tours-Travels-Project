@@ -175,11 +175,17 @@
         </p>
       </div>
 
-      <!-- Team Grid -->
-      <div class="grid grid-cols-3 gap-10">
-        <!-- Card 1 -->
+      <!-- Team Grid with Scroll Navigation -->
+      <div class="relative">
+        <button id="teamScrollPrev" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-white/20 text-[#1a2332] hover:text-[#d4af37] w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 md:hidden">
+          <i class="ri-arrow-left-s-line text-[24px]"></i>
+        </button>
+
+        <!-- Mobile Scroll View -->
+        <div id="teamScrollContainer" class="flex overflow-x-auto gap-10 pb-4 snap-x snap-mandatory scroll-smooth md:hidden">
+          <!-- Card 1 -->
         <article
-          class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          class="flex-shrink-0 w-full snap-start bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
           <img
             src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop"
             alt="Rajesh Patil"
@@ -208,7 +214,7 @@
 
         <!-- Card 2 -->
         <article
-          class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          class="flex-shrink-0 w-full snap-start bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
           <img
             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop"
             alt="Amit Deshmukh"
@@ -237,7 +243,7 @@
 
         <!-- Card 3 -->
         <article
-          class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          class="flex-shrink-0 w-full snap-start bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
           <img
             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop"
             alt="Suresh Joshi"
@@ -266,7 +272,7 @@
 
         <!-- Card 4 -->
         <article
-          class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          class="flex-shrink-0 w-full snap-start bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
           <img
             src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop"
             alt="Vijay Kadam"
@@ -295,7 +301,7 @@
 
         <!-- Card 5 -->
         <article
-          class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          class="flex-shrink-0 w-full snap-start bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
           <img
             src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
             alt="Ganesh More"
@@ -350,9 +356,95 @@
             </p>
           </div>
         </article>
+        </div>
+
+        <!-- Desktop Grid View -->
+        <div class="hidden md:grid md:grid-cols-3 gap-10">
+          <!-- Desktop team cards - same content as mobile but displayed in grid -->
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop" alt="Rajesh Patil" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">SUV Pilot</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Rajesh Patil</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>15 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Specialist in long-distance hill station tours. Known for smooth driving on the Western Ghats and extensive local knowledge of hidden gems.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop" alt="Amit Deshmukh" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">Bus Captain</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Amit Deshmukh</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>12 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Master of our luxury coaches. Amit handles large groups with patience and ensures every passenger travels in absolute comfort.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" alt="Suresh Joshi" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">Sedan Chauffeur</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Suresh Joshi</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>8 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Our corporate travel expert. Punctual, polite, and professional, ensuring business clients reach their meetings stress-free.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Vijay Kadam" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">Off-Road Specialist</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Vijay Kadam</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>10 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Expert in navigating rugged terrains. Perfect for adventure tours to forts and wildlife sanctuaries across Maharashtra.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Ganesh More" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">Guide & Storyteller</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Ganesh More</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>9 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Our heritage expert and storyteller. Makes history come alive with fascinating tales about Ajanta, Ellora, and local culture.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" alt="Rohan Shinde" class="w-full h-80 object-cover object-top" />
+            <div class="relative px-8 pb-8 pt-10">
+              <span class="absolute -top-4 right-8 bg-[#d4af37] text-white px-4 py-1 rounded-full text-[11px] font-semibold tracking-[0.2em] uppercase shadow-lg">Airport Transfer</span>
+              <h3 class="text-2xl font-semibold text-[#1a2332] mb-1">Rohan Shinde</h3>
+              <div class="flex items-center gap-2 text-xs text-slate-500 mb-4"><i class="ri-time-line text-[#d4af37]"></i><span>5 Years Experience</span></div>
+              <p class="text-sm leading-relaxed text-slate-600">Efficient and route-smart. Rohan specializes in Pune and Mumbai airport transfers, guaranteeing timely arrivals and departures.</p>
+            </div>
+          </article>
+        </div>
+
+        <button id="teamScrollNext" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-white/20 text-[#1a2332] hover:text-[#d4af37] w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 md:hidden">
+          <i class="ri-arrow-right-s-line text-[24px]"></i>
+        </button>
       </div>
     </div>
   </section>
+
+  <script>
+    // Team scroll navigation
+    const teamContainer = document.getElementById('teamScrollContainer');
+    const teamPrevBtn = document.getElementById('teamScrollPrev');
+    const teamNextBtn = document.getElementById('teamScrollNext');
+
+    if (teamContainer && teamPrevBtn && teamNextBtn) {
+      teamPrevBtn.addEventListener('click', () => {
+        teamContainer.scrollBy({ left: -400, behavior: 'smooth' });
+      });
+
+      teamNextBtn.addEventListener('click', () => {
+        teamContainer.scrollBy({ left: 400, behavior: 'smooth' });
+      });
+    }
+  </script>
 
   <!-- Footer -->
   <footer class="bg-[#1a2332] text-white pt-20 pb-10">

@@ -3,23 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no" />
   <style>
-
-    html, body { touch-action: manipulation; -ms-touch-action: manipulation; }
+    html,
+    body {
+      touch-action: manipulation;
+      -ms-touch-action: manipulation;
+    }
   </style>
   <title>Ellora Tours and Travels - Contact Us</title>
 
   <!-- Remix Icons -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,87 +26,91 @@
 <body class="bg-white text-[#1a2332] antialiased">
 
   <!-- Navbar -->
-<header class="bg-[#1a2332] sticky top-0 z-50 shadow-lg">
-  <div class="max-w-6xl mx-auto flex items-center justify-between h-24 px-6">
-    <!-- Logo -->
-    <a href="#" class="flex items-center gap-3 text-white font-semibold text-2xl tracking-wide" >
-      <i class="ri-roadster-line text-[40px] text-[#d4af37]"></i>
-      <span>
-        ELLORA <span class="text-[#d4af37]">TOURS</span>
-      </span>
-    </a>
+  <header class="bg-[#1a2332] sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto flex items-center justify-between h-24 px-6">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 text-white font-semibold text-2xl tracking-wide">
+        <i class="ri-roadster-line text-[40px] text-[#d4af37]"></i>
+        <span>
+          ELLORA <span class="text-[#d4af37]">TOURS</span>
+        </span>
+      </a>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="lg:hidden flex items-center justify-center w-10 h-10 text-white cursor-pointer">
-      <i class="ri-menu-line text-[24px]"></i>
-    </button>
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="lg:hidden flex items-center justify-center w-10 h-10 text-white cursor-pointer">
+        <i class="ri-menu-line text-[24px]"></i>
+      </button>
 
-    <!-- Nav Menu -->
-    <nav id="navMenu" class="hidden lg:flex absolute lg:relative top-24 lg:top-0 left-0 right-0 lg:left-auto lg:right-auto bg-[#1a2332] lg:bg-transparent flex-col lg:flex-row w-full lg:w-auto">
-      <ul class="flex flex-col lg:flex-row gap-0 lg:gap-10 text-sm font-semibold uppercase tracking-wide">
-        
-        <li class="border-b lg:border-b-0">
-          <a href="home.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
-            Home
-          </a>
-        </li>
+      <!-- Nav Menu -->
+      <nav id="navMenu"
+        class="hidden lg:flex absolute lg:relative top-24 lg:top-0 left-0 right-0 lg:left-auto lg:right-auto bg-[#1a2332] lg:bg-transparent flex-col lg:flex-row w-full lg:w-auto">
+        <ul class="flex flex-col lg:flex-row gap-0 lg:gap-10 text-sm font-semibold uppercase tracking-wide">
 
-        <li class="border-b lg:border-b-0">
-          <a href="services.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
-            Services
-          </a>
-        </li>
+          <li class="border-b lg:border-b-0">
+            <a href="home.html"
+              class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+              Home
+            </a>
+          </li>
 
-        <li class="border-b lg:border-b-0">
-          <a href="photogallery.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
-            Photo Gallery
-          </a>
-        </li>
-        
-        <li class="border-b lg:border-b-0">
-          <a href="about.html" class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
-            About Us
-          </a>
-        </li>
-        
-        <li class="border-b lg:border-b-0">
-          <a href="contact.html" class="block lg:inline text-[#d4af37] border-b-2 border-[#d4af37] pb-1 px-6 lg:px-0 py-4 lg:py-0">
-            Contact Us
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+          <li class="border-b lg:border-b-0">
+            <a href="services.html"
+              class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+              Services
+            </a>
+          </li>
 
-<script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('menuBtn');
-  const navMenu = document.getElementById('navMenu');
+          <li class="border-b lg:border-b-0">
+            <a href="photogallery.html"
+              class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+              Photo Gallery
+            </a>
+          </li>
 
-  menuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
-  });
+          <li class="border-b lg:border-b-0">
+            <a href="about.html"
+              class="block lg:inline text-white/90 hover:text-[#d4af37] transition-colors border-b-2 border-transparent pb-1 px-6 lg:px-0 py-4 lg:py-0">
+              About Us
+            </a>
+          </li>
 
-  // Close menu when a link is clicked
-  navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.add('hidden');
+          <li class="border-b lg:border-b-0">
+            <a href="contact.html"
+              class="block lg:inline text-[#d4af37] border-b-2 border-[#d4af37] pb-1 px-6 lg:px-0 py-4 lg:py-0">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
     });
-  });
-</script>
+
+    // Close menu when a link is clicked
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.add('hidden');
+      });
+    });
+  </script>
 
 
   <!-- Hero -->
-  <section
-    class="h-[350px] flex flex-col items-center justify-center text-center relative overflow-hidden bg-[#1a2332]"
+  <section class="h-[350px] flex flex-col items-center justify-center text-center relative overflow-hidden bg-[#1a2332]"
     style="
       background:
         radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(212,175,55,0.1) 0%, transparent 40%),
         #1a2332;
-    "
-  >
+    ">
     <h1 class="font-serif text-[56px] text-white mb-4 z-1">
       Contact Us
     </h1>
@@ -119,81 +121,74 @@
   </section>
 
   <!-- Contact Information -->
-  <section class="py-20 px-28 bg-white">
-    <div class="grid grid-cols-3 gap-10">
-      <!-- Phone Block -->
-      <div
-        class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]"
-      >
+  <!-- <div class="grid grid-cols-3 gap-8"> -->
+    <section class="py-20 px-6 md:px-12 lg:px-28 bg-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Phone Block -->
         <div
-          class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]"
-        >
-          <i class="ri-phone-line"></i>
+          class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]">
+          <div
+            class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]">
+            <i class="ri-phone-line"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
+            Call Us
+          </h3>
+          <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
+            +91 98765 43210<br />Mon-Sat, 9am - 6pm
+          </p>
+          <div
+            class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline">
+            Call Now
+            <i class="ri-arrow-right-line"></i>
+          </div>
         </div>
-        <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
-          Call Us
-        </h3>
-        <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
-          +91 98765 43210<br />Mon-Sat, 9am - 6pm
-        </p>
-        <div
-          class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline"
-        >
-          Call Now
-          <i class="ri-arrow-right-line"></i>
-        </div>
-      </div>
 
-      <!-- Email Block -->
-      <div
-        class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]"
-      >
+        <!-- Email Block -->
         <div
-          class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]"
-        >
-          <i class="ri-mail-send-line"></i>
+          class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]">
+          <div
+            class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]">
+            <i class="ri-mail-send-line"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
+            Email Us
+          </h3>
+          <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
+            info@elloratours.com<br />For inquiries &amp; booking
+          </p>
+          <div
+            class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline">
+            Send Message
+            <i class="ri-arrow-right-line"></i>
+          </div>
         </div>
-        <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
-          Email Us
-        </h3>
-        <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
-          info@elloratours.com<br />For inquiries &amp; booking
-        </p>
-        <div
-          class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline"
-        >
-          Send Message
-          <i class="ri-arrow-right-line"></i>
-        </div>
-      </div>
 
-      <!-- Address Block -->
-      <div
-        class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]"
-      >
+        <!-- Address Block -->
         <div
-          class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]"
-        >
-          <i class="ri-map-pin-line"></i>
-        </div>
-        <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
-          Visit Us
-        </h3>
-        <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
-          1234 Ellora Circle, Pune<br />Maharashtra 411001
-        </p>
-        <div
-          class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline"
-        >
-          Get Directions
-          <i class="ri-arrow-right-line"></i>
+          class="bg-white border border-[#eeeeee] rounded-2xl px-10 py-12 text-center shadow-[0_10px_30px_rgba(26,35,50,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(26,35,50,0.12)] hover:border-[#d4af37]">
+          <div
+            class="w-20 h-20 mx-auto mb-7 rounded-full bg-[rgba(212,175,55,0.1)] flex items-center justify-center text-[#d4af37] text-[32px]">
+            <i class="ri-map-pin-line"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-[#1a2332] mb-3">
+            Visit Us
+          </h3>
+          <p class="text-[18px] text-[#666666] leading-relaxed mb-4">
+            1234 Ellora Circle, Pune<br />Maharashtra 411001
+          </p>
+          <div
+            class="inline-flex items-center gap-1 font-medium text-[16px] text-[#d4af37] cursor-pointer hover:underline">
+            Get Directions
+            <i class="ri-arrow-right-line"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Booking Form -->
-  <section class="bg-[#f8f9fa] py-24 px-28 flex flex-col items-center">
+  <section class="bg-[#f8f9fa] py-24 px-6 md:px-12 lg:px-28 flex flex-col items-center">
     <div class="text-center mb-14 max-w-2xl">
       <h2 class="font-serif text-[42px] text-[#1a2332] mb-4">
         Book Your Tour
@@ -203,65 +198,42 @@
       </p>
     </div>
 
-    <form
-      class="bg-white w-full max-w-4xl px-16 py-14 rounded-2xl shadow-[0_10px_30px_rgba(26,35,50,0.08)]"
-    >
-      <div class="grid grid-cols-2 gap-8">
+    <form class="bg-white w-full max-w-4xl px-6 md:px-10 lg:px-16 py-14 rounded-2xl shadow-[0_10px_30px_rgba(26,35,50,0.08)]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Full Name -->
         <div class="flex flex-col">
-          <label
-            class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2"
-          >
+          <label class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2">
             Full Name *
           </label>
-          <input
-            type="text"
-            required
-            placeholder="Enter your full name"
-            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]"
-          />
+          <input type="text" required placeholder="Enter your full name"
+            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]" />
         </div>
 
         <!-- Email Address -->
         <div class="flex flex-col">
-          <label
-            class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2"
-          >
+          <label class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2">
             Email Address *
           </label>
-          <input
-            type="email"
-            required
-            placeholder="Enter your email"
-            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]"
-          />
+          <input type="email" required placeholder="Enter your email"
+            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]" />
         </div>
 
         <!-- Phone Number -->
         <div class="flex flex-col">
-          <label
-            class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2"
-          >
+          <label class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2">
             Phone Number *
           </label>
-          <input
-            type="tel"
-            required
-            placeholder="+91 Phone Number"
-            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]"
-          />
+          <input type="tel" required placeholder="+91 Phone Number"
+            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]" />
         </div>
 
         <!-- Subject -->
         <div class="flex flex-col">
-          <label
-            class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2"
-          >
+          <label class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2">
             Subject
           </label>
           <select
-            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]"
-          >
+            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)]">
             <option>General Inquiry</option>
             <option>Domestic Tour Package</option>
             <option>International Tour Package</option>
@@ -270,24 +242,17 @@
         </div>
 
         <!-- Message -->
-        <div class="flex flex-col col-span-2">
-          <label
-            class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2"
-          >
+        <div class="flex flex-col col-span-1 md:col-span-2">
+          <label class="font-medium text-[14px] uppercase tracking-0.1em text-[#1a2332] mb-2">
             Message / Booking Details *
           </label>
-          <textarea
-            required
-            placeholder="Tell us about your travel plans, dates, and preferences..."
-            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] h-40 resize-none"
-          ></textarea>
+          <textarea required placeholder="Tell us about your travel plans, dates, and preferences..."
+            class="px-5 py-4 border border-[#e0e0e0] rounded-lg text-[16px] bg-[#fafafa] outline-none transition-all duration-200 focus:border-[#d4af37] focus:bg-white focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] h-40 resize-none"></textarea>
         </div>
 
         <!-- Submit button -->
-        <button
-          type="submit"
-          class="col-span-2 mt-2 bg-[#1a2332] text-white py-5 rounded-lg font-bold text-[18px] tracking-0.1em uppercase border-none cursor-pointer transition-all duration-200 hover:bg-[#d4af37] hover:-translate-y-2px"
-        >
+        <button type="submit"
+          class="col-span-1 md:col-span-2 mt-2 bg-[#1a2332] text-white py-5 rounded-lg font-bold text-[18px] tracking-0.1em uppercase border-none cursor-pointer transition-all duration-200 hover:bg-[#d4af37] hover:-translate-y-2px">
           Send Message
         </button>
       </div>
@@ -296,9 +261,7 @@
 
   <!-- Footer -->
   <footer class="bg-[#1a2332] text-white pt-20 pb-10 px-10">
-    <div
-      class="grid grid-cols-1 lg:grid-cols-[2fr,1fr,1fr,1.5fr] gap-[60px] mb-[60px]"
-    >
+    <div class="grid grid-cols-1 lg:grid-cols-[2fr,1fr,1fr,1.5fr] gap-[60px] mb-[60px]">
       <!-- Brand -->
       <div>
         <h3 class="font-serif text-[28px] mb-5">
@@ -309,28 +272,20 @@
           personalized service and attention to detail. Your adventure begins here.
         </p>
         <div class="flex gap-3">
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors"
-          >
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors">
             <i class="ri-facebook-fill"></i>
           </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors"
-          >
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors">
             <i class="ri-instagram-line"></i>
           </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors"
-          >
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors">
             <i class="ri-twitter-x-line"></i>
           </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors"
-          >
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#d4af37] transition-colors">
             <i class="ri-linkedin-fill"></i>
           </a>
         </div>
@@ -344,7 +299,8 @@
         <ul class="space-y-3 text-[16px]">
           <li><a href="home.html" class="text-white/70 hover:text-white transition-colors">Home</a></li>
           <li><a href="services.html" class="text-white/70 hover:text-white transition-colors">Our Services</a></li>
-          <li><a href="photogallery.html" class="text-white/70 hover:text-white transition-colors">Photo Gallery</a></li>
+          <li><a href="photogallery.html" class="text-white/70 hover:text-white transition-colors">Photo Gallery</a>
+          </li>
           <li><a href="about.html" class="text-white/70 hover:text-white transition-colors">About Us</a></li>
           <li><a href="contact.html" class="text-white/70 hover:text-white transition-colors">Contact Us</a></li>
         </ul>
@@ -392,4 +348,5 @@
   </footer>
 
 </body>
+
 </html>
